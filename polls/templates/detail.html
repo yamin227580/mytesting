@@ -1,0 +1,32 @@
+
+{% block content %}
+<!DOCTYPE html> 
+<html lang="en"> 
+	<body>
+		<div class="container my-5">
+			<h1 class="text-info text-center"> Information </h1><br>
+				<div class="col-md-10 offset-md-1">
+				
+					<table border = "1" >
+							<tr>
+								<td>No</td>
+								<td>Name</td>
+								<td>Position</td>
+								<td>Gender</td>
+								<td>Text</td>
+							</tr>
+						{% for doc in data %}
+							<tr>
+								<td>{{doc.id}}</td>
+								<td> {{doc.username}}</td>
+								<td>{{doc.position}}</td>
+								<td>{{doc.gender}}</td>
+								<td>{{doc.text}}</td>
+							</tr>
+						{% endfor %}
+					</table>
+				</div>
+			</div>
+	</body>
+</html>
+{% endblock %}
