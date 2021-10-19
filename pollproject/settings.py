@@ -25,7 +25,7 @@ SECRET_KEY = '-+y9f9*98+$r-@bai+)c4i#x3io!x)7(&2smqwn158a_9@00#='
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','ysform.herokuapp.com']
 
 
 # Application definition
